@@ -1,21 +1,9 @@
 #!/bin/bash
 # lvusyy
 #
-
+mkdir -p /etc/docker
 cat << FFF >> /etc/docker/daemon.json
-{
-  "registry-mirrors" : [
-    "http://docker.mirrors.ustc.edu.cn",
-    "http://hub-mirror.c.163.com",
-    "registry.docker-cn.com"
-  ],
-  "insecure-registries" : [
-    "registry.docker-cn.com",
-    "docker.mirrors.ustc.edu.cn"
-  ],
-  "debug" : true,
-  "experimental" : true
-}
+{"registry-mirrors":["https://docker.mirrors.ustc.edu.cn","https://hub-mirror.c.163.com","https://registry.docker-cn.com"]}
 FFF
 
 systemctl restart docker
