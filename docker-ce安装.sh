@@ -11,8 +11,5 @@ yum install docker-ce -y
 
 
 
-
-
-
 #其他系统
 #https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/
