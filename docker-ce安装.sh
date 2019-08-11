@@ -13,6 +13,7 @@ cat << FFF >> /etc/docker/daemon.json
 {"registry-mirrors":["https://docker.mirrors.ustc.edu.cn","https://hub-mirror.c.163.com","https://registry.docker-cn.com"]}
 FFF
 
+#Ctrl+P+Q 退出容器而不退出容器
 
 #其他系统
 #https://mirrors.tuna.tsinghua.edu.cn/help/docker-ce/
